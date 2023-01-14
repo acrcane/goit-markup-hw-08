@@ -1,0 +1,86 @@
+.banner {
+  @include adapt('padding-top', 118, 50, 480, 320);
+  @include adapt('padding-bottom', 118, 50, 480, 320);
+  max-width: 1600px;
+  margin: 0 auto;
+  text-align: center;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (max-width: 480px) {
+    background-image: var(--banner-gradient), url('../images/banner/480/banner.jpg');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: var(--banner-gradient), url('../images/banner/480/banner@2.jpg');
+    }
+
+    @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+      background-image: var(--banner-gradient), url('../images/banner/480/banner@3.jpg');
+    }
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    background-image: var(--banner-gradient), url('../images/banner/768/banner.jpg');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: var(--banner-gradient), url('../images/banner/768/banner@2.jpg');
+    }
+
+    @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+      background-image: var(--banner-gradient), url('../images/banner/768/banner@3.jpg');
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    background-image: var(--banner-gradient), url('../images/banner/1200/banner.jpg');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: var(--banner-gradient), url('../images/banner/1200/banner@2.jpg');
+    }
+
+    @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+      background-image: var(--banner-gradient), url('../images/banner/1200/banner@3.jpg');
+    }
+  }
+
+  @media screen and (min-width: 480px) {
+    padding: 118px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+  }
+}
+
+.banner__wrap {
+  width: 100%;
+  max-width: 320px;
+
+  @media screen and (min-width: 480px) {
+    max-width: 360px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+  }
+}
+
+.banner__title {
+  @include adapt('margin-bottom', 30, 20, 480, 320);
+  @include font(900, 22px, 38px, 0.06em, var(--second-color));
+  text-transform: uppercase;
+
+  @media screen and (min-width: 480px) {
+    @include font(900, 26px, 42px, 0.06em, var(--second-color));
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(900, 44px, 47px, 0.06em, var(--second-color));
+  }
+}
+
+.banner__button {
+  padding: 10px 32px;
+}

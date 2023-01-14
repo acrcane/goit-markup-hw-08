@@ -1,0 +1,33 @@
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 479px) {
+    row-gap: 10px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.social-links__item {
+  @media screen and (max-width: 479px) {
+    flex: 1 1 50%;
+  }
+
+  @media screen and (min-width: 480px) {
+    &:not(:last-child) {
+      padding-right: 10px;
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+
+    &:not(:first-child) {
+      padding-left: 10px;
+    }
+  }
+}
+
+.social-links__link {
+  @include font(500, 18px, 22px, 0.2px, var(--accent-color));
+}

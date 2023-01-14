@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrap _container">
+        <a class="header__logo logo" href="./index.html" lang="en">
+          Web<span class="header__logo--color">Studio</span>
+        </a>
+
+        <button
+          class="button-menu js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-control"
+          data-menu-open
+        >
+          <svg
+            class="button-menu__icons"
+            width="40"
+            height="40"
+            aria-label="Перемикач мобільного меню"
+          >
+            <use
+              class="button-menu__open"
+              href="./images/icons/icons-webstudio.svg#icon-menu-open"
+            ></use>
+          </svg>
+        </button>
+
+        <button
+          class="button-menu js-close-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-control"
+        >
+          <svg
+            class="button-menu__icons"
+            width="40"
+            height="40"
+            aria-label="Перемикач мобільного меню"
+          >
+            <use
+              class="button-menu__close"
+              href="./images/icons/icons-webstudio.svg#icon-menu-close"
+            ></use>
+          </svg>
+        </button>
+
+        <div class="header__menu-wrap js-menu-container" id="menu-control">
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="./index.html">Студія</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link menu__link--active" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__contacts-wrap">
+            <ul class="header__contacts contacts">
+              <li class="contacts__item">
+                <a class="contacts__link contacts__link--mobile" href="mailto:info@devstudio.com">
+                  <svg class="contacts__icon-link" width="16" height="12">
+                    <use href="./images/icons/icons-webstudio.svg#icon-email"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link" href="tel:+380961111111">
+                  <svg class="contacts__icon-link" width="10" height="16">
+                    <use href="./images/icons/icons-webstudio.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+
+            <ul class="header__social-links social-links">
+              <li class="social-links__item">
+                <a
+                  class="social-links__link"
+                  href="http://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Instagram
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a
+                  class="social-links__link"
+                  href="http://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Twitter
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a
+                  class="social-links__link"
+                  href="http://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Facebook
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a
+                  class="social-links__link"
+                  href="http://linkedIn.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="section portfolio">
+        <div class="_container">
+          <h1 class="visually-hidden">Наше портфоліо</h1>
+
+          <ul class="portfolio__list-filter filters">
+            <li class="filters__item">
+              <button class="filters__button filters__button--active" type="button">Усі</button>
+            </li>
+            <li class="filters__item">
+              <button class="filters__button" type="button">Веб-сайти</button>
+            </li>
+            <li class="filters__item">
+              <button class="filters__button" type="button">Додатки</button>
+            </li>
+            <li class="filters__item">
+              <button class="filters__button" type="button">Дизайн</button>
+            </li>
+            <li class="filters__item">
+              <button class="filters__button" type="button">Маркетинг</button>
+            </li>
+          </ul>
+
+          <ul class="portfolio__list cards">
+            <li class="cards__item">
+              <a class="product" href="#">
+                <div class="product__wrap-img">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/01-tehnokryak/tehnokryak-354.avif   354w,
+                        ./images/portfolio/01-tehnokryak/tehnokryak-370.avif   370w,
+                        ./images/portfolio/01-tehnokryak/tehnokryak-450.avif   450w,
+                        ./images/portfolio/01-tehnokryak/tehnokryak-708.avif   708w,
+                        ./images/portfolio/01-tehnokryak/tehnokryak-740.avif   740w,
+                        ./images/portfolio/01-tehnokryak/tehnokryak-900.avif   900w,
+                        ./images/portfolio/01-tehnokryak/tehnokryak-1062.avif 1062w,
+                        ./images/portfolio/01-tehnokryak/tehnokryak-1110.avif 1110w,
+                        ./images/portfolio/01-tehnokryak/tehnokryak-1350.avif 1350w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/01-tehnokryak/tehnokryak-354.webp   354w,
+                        ./images/portfolio/01-tehnokryak/tehnokryak-370.webp   370w,
+                        ./images/portfolio/01-tehnokryak/tehnokryak-450.webp   450w,
+                        ./images/portfolio/01-tehnokryak/tehnokryak-708.webp   708w,
+                        ./images/portfolio/01-tehnokryak/tehnokryak-740.webp   740w,
+                        ./images/portfolio/01-tehnokryak/tehnokryak-900.webp   900w,
+                        ./images/portfolio/01-tehnokryak/tehnokryak-1062.webp 1062w,
+                        ./images/portfolio/01-tehnokryak/tehnokryak-1110.webp 1110w,
+                        ./images/portfolio/01-tehnokryak/tehnokryak-1350.webp 1350w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      type="image/webp"
+                    />
+                    <img
+                      class="product__img"
+                      loading="lazy"
+                      srcset="
+                        ./images/portfolio/01-tehnokryak/tehnokryak-354.jpg   354w,
+                        ./images/portfolio/01-tehnokryak/tehnokryak-370.jpg   370w,
+                        ./images/portfolio/01-tehnokryak/tehnokryak-450.jpg   450w,
+                        ./images/portfolio/01-tehnokryak/tehnokryak-708.jpg   708w,
+                        ./images/portfolio/01-tehnokryak/tehnokryak-740.jpg   740w,
+                        ./images/portfolio/01-tehnokryak/tehnokryak-900.jpg   900w,
+                        ./images/portfolio/01-tehnokryak/tehnokryak-1062.jpg 1062w,
+                        ./images/portfolio/01-tehnokryak/tehnokryak-1110.jpg 1110w,
+                        ./images/portfolio/01-tehnokryak/tehnokryak-1350.jpg 1350w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      src="./images/portfolio/01-tehnokryak/tehnokryak-354.jpg"
+                      alt="Проект веб-сайта Технокряк"
+                    />
+                  </picture>
+                  <div class="product__overlay">
+                    <p class="product__text-about">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="product__wrap-text">
+                  <h2 class="product__title title">Технокряк</h2>
+                  <p class="product__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item">
+              <a class="product" href="#">
+                <div class="product__wrap-img">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/02-orlen/orlen-354.avif   354w,
+                        ./images/portfolio/02-orlen/orlen-370.avif   370w,
+                        ./images/portfolio/02-orlen/orlen-450.avif   450w,
+                        ./images/portfolio/02-orlen/orlen-708.avif   708w,
+                        ./images/portfolio/02-orlen/orlen-740.avif   740w,
+                        ./images/portfolio/02-orlen/orlen-900.avif   900w,
+                        ./images/portfolio/02-orlen/orlen-1062.avif 1062w,
+                        ./images/portfolio/02-orlen/orlen-1110.avif 1110w,
+                        ./images/portfolio/02-orlen/orlen-1350.avif 1350w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/02-orlen/orlen-354.webp   354w,
+                        ./images/portfolio/02-orlen/orlen-370.webp   370w,
+                        ./images/portfolio/02-orlen/orlen-450.webp   450w,
+                        ./images/portfolio/02-orlen/orlen-708.webp   708w,
+                        ./images/portfolio/02-orlen/orlen-740.webp   740w,
+                        ./images/portfolio/02-orlen/orlen-900.webp   900w,
+                        ./images/portfolio/02-orlen/orlen-1062.webp 1062w,
+                        ./images/portfolio/02-orlen/orlen-1110.webp 1110w,
+                        ./images/portfolio/02-orlen/orlen-1350.webp 1350w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      type="image/webp"
+                    />
+                    <img
+                      class="product__img"
+                      loading="lazy"
+                      srcset="
+                        ./images/portfolio/02-orlen/orlen-354.jpg   354w,
+                        ./images/portfolio/02-orlen/orlen-370.jpg   370w,
+                        ./images/portfolio/02-orlen/orlen-450.jpg   450w,
+                        ./images/portfolio/02-orlen/orlen-708.jpg   708w,
+                        ./images/portfolio/02-orlen/orlen-740.jpg   740w,
+                        ./images/portfolio/02-orlen/orlen-900.jpg   900w,
+                        ./images/portfolio/02-orlen/orlen-1062.jpg 1062w,
+                        ./images/portfolio/02-orlen/orlen-1110.jpg 1110w,
+                        ./images/portfolio/02-orlen/orlen-1350.jpg 1350w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      src="./images/portfolio/02-orlen/orlen-354.jpg"
+                      alt="Проект дизайн постера Нью Орлеан"
+                    />
+                  </picture>
+                  <div class="product__overlay">
+                    <p class="product__text-about">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="product__wrap-text">
+                  <h2 class="product__title title">Постер New Orlean vs Golden Star</h2>
+                  <p class="product__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item">
+              <a class="product" href="#">
+                <div class="product__wrap-img">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/03-seafood/seafood-354.avif   354w,
+                        ./images/portfolio/03-seafood/seafood-370.avif   370w,
+                        ./images/portfolio/03-seafood/seafood-450.avif   450w,
+                        ./images/portfolio/03-seafood/seafood-708.avif   708w,
+                        ./images/portfolio/03-seafood/seafood-740.avif   740w,
+                        ./images/portfolio/03-seafood/seafood-900.avif   900w,
+                        ./images/portfolio/03-seafood/seafood-1062.avif 1062w,
+                        ./images/portfolio/03-seafood/seafood-1110.avif 1110w,
+                        ./images/portfolio/03-seafood/seafood-1350.avif 1350w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/03-seafood/seafood-354.webp   354w,
+                        ./images/portfolio/03-seafood/seafood-370.webp   370w,
+                        ./images/portfolio/03-seafood/seafood-450.webp   450w,
+                        ./images/portfolio/03-seafood/seafood-708.webp   708w,
+                        ./images/portfolio/03-seafood/seafood-740.webp   740w,
+                        ./images/portfolio/03-seafood/seafood-900.webp   900w,
+                        ./images/portfolio/03-seafood/seafood-1062.webp 1062w,
+                        ./images/portfolio/03-seafood/seafood-1110.webp 1110w,
+                        ./images/portfolio/03-seafood/seafood-1350.webp 1350w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      type="image/webp"
+                    />
+                    <img
+                      class="product__img"
+                      loading="lazy"
+                      srcset="
+                        ./images/portfolio/03-seafood/seafood-354.jpg   354w,
+                        ./images/portfolio/03-seafood/seafood-370.jpg   370w,
+                        ./images/portfolio/03-seafood/seafood-450.jpg   450w,
+                        ./images/portfolio/03-seafood/seafood-708.jpg   708w,
+                        ./images/portfolio/03-seafood/seafood-740.jpg   740w,
+                        ./images/portfolio/03-seafood/seafood-900.jpg   900w,
+                        ./images/portfolio/03-seafood/seafood-1062.jpg 1062w,
+                        ./images/portfolio/03-seafood/seafood-1110.jpg 1110w,
+                        ./images/portfolio/03-seafood/seafood-1350.jpg 1350w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      src="./images/portfolio/03-seafood/seafood-354.jpg"
+                      alt="Проект додатка для ресторана Сіафуд"
+                    />
+                  </picture>
+                  <div class="product__overlay">
+                    <p class="product__text-about">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="product__wrap-text">
+                  <h2 class="product__title title">Ресторан Seafood</h2>
+                  <p class="product__text">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item">
+              <a class="product" href="#">
+                <div class="product__wrap-img">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/04-prime/prime-354.avif   354w,
+                        ./images/portfolio/04-prime/prime-370.avif   370w,
+                        ./images/portfolio/04-prime/prime-450.avif   450w,
+                        ./images/portfolio/04-prime/prime-708.avif   708w,
+                        ./images/portfolio/04-prime/prime-740.avif   740w,
+                        ./images/portfolio/04-prime/prime-900.avif   900w,
+                        ./images/portfolio/04-prime/prime-1062.avif 1062w,
+                        ./images/portfolio/04-prime/prime-1110.avif 1110w,
+                        ./images/portfolio/04-prime/prime-1350.avif 1350w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/04-prime/prime-354.webp   354w,
+                        ./images/portfolio/04-prime/prime-370.webp   370w,
+                        ./images/portfolio/04-prime/prime-450.webp   450w,
+                        ./images/portfolio/04-prime/prime-708.webp   708w,
+                        ./images/portfolio/04-prime/prime-740.webp   740w,
+                        ./images/portfolio/04-prime/prime-900.webp   900w,
+                        ./images/portfolio/04-prime/prime-1062.webp 1062w,
+                        ./images/portfolio/04-prime/prime-1110.webp 1110w,
+                        ./images/portfolio/04-prime/prime-1350.webp 1350w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      type="image/webp"
+                    />
+                    <img
+                      class="product__img"
+                      loading="lazy"
+                      srcset="
+                        ./images/portfolio/04-prime/prime-354.jpg   354w,
+                        ./images/portfolio/04-prime/prime-370.jpg   370w,
+                        ./images/portfolio/04-prime/prime-450.jpg   450w,
+                        ./images/portfolio/04-prime/prime-708.jpg   708w,
+                        ./images/portfolio/04-prime/prime-740.jpg   740w,
+                        ./images/portfolio/04-prime/prime-900.jpg   900w,
+                        ./images/portfolio/04-prime/prime-1062.jpg 1062w,
+                        ./images/portfolio/04-prime/prime-1110.jpg 1110w,
+                        ./images/portfolio/04-prime/prime-1350.jpg 1350w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      src="./images/portfolio/04-prime/prime-354.jpg"
+                      alt="Проект маркетингу для Прайм"
+                    />
+                  </picture>
+                  <div class="product__overlay">
+                    <p class="product__text-about">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="product__wrap-text">
+                  <h2 class="product__title title">Проєкт Prime</h2>
+                  <p class="product__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item">
+              <a class="product" href="#">
+                <div class="product__wrap-img">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/05-boxes/boxes-354.avif   354w,
+                        ./images/portfolio/05-boxes/boxes-370.avif   370w,
+                        ./images/portfolio/05-boxes/boxes-450.avif   450w,
+                        ./images/portfolio/05-boxes/boxes-708.avif   708w,
+                        ./images/portfolio/05-boxes/boxes-740.avif   740w,
+                        ./images/portfolio/05-boxes/boxes-900.avif   900w,
+                        ./images/portfolio/05-boxes/boxes-1062.avif 1062w,
+                        ./images/portfolio/05-boxes/boxes-1110.avif 1110w,
+                        ./images/portfolio/05-boxes/boxes-1350.avif 1350w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/05-boxes/boxes-354.webp   354w,
+                        ./images/portfolio/05-boxes/boxes-370.webp   370w,
+                        ./images/portfolio/05-boxes/boxes-450.webp   450w,
+                        ./images/portfolio/05-boxes/boxes-708.webp   708w,
+                        ./images/portfolio/05-boxes/boxes-740.webp   740w,
+                        ./images/portfolio/05-boxes/boxes-900.webp   900w,
+                        ./images/portfolio/05-boxes/boxes-1062.webp 1062w,
+                        ./images/portfolio/05-boxes/boxes-1110.webp 1110w,
+                        ./images/portfolio/05-boxes/boxes-1350.webp 1350w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      type="image/webp"
+                    />
+                    <img
+                      class="product__img"
+                      loading="lazy"
+                      srcset="
+                        ./images/portfolio/05-boxes/boxes-354.jpg   354w,
+                        ./images/portfolio/05-boxes/boxes-370.jpg   370w,
+                        ./images/portfolio/05-boxes/boxes-450.jpg   450w,
+                        ./images/portfolio/05-boxes/boxes-708.jpg   708w,
+                        ./images/portfolio/05-boxes/boxes-740.jpg   740w,
+                        ./images/portfolio/05-boxes/boxes-900.jpg   900w,
+                        ./images/portfolio/05-boxes/boxes-1062.jpg 1062w,
+                        ./images/portfolio/05-boxes/boxes-1110.jpg 1110w,
+                        ./images/portfolio/05-boxes/boxes-1350.jpg 1350w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      src="./images/portfolio/05-boxes/boxes-354.jpg"
+                      alt="Проект додатка для сайта Боксес"
+                    />
+                  </picture>
+                  <div class="product__overlay">
+                    <p class="product__text-about">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="product__wrap-text">
+                  <h2 class="product__title title">Проєкт Boxes</h2>
+                  <p class="product__text">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item">
+              <a class="product" href="#">
+                <div class="product__wrap-img">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/06-inspiration/inspiration-354.avif   354w,
+                        ./images/portfolio/06-inspiration/inspiration-370.avif   370w,
+                        ./images/portfolio/06-inspiration/inspiration-450.avif   450w,
+                        ./images/portfolio/06-inspiration/inspiration-708.avif   708w,
+                        ./images/portfolio/06-inspiration/inspiration-740.avif   740w,
+                        ./images/portfolio/06-inspiration/inspiration-900.avif   900w,
+                        ./images/portfolio/06-inspiration/inspiration-1062.avif 1062w,
+                        ./images/portfolio/06-inspiration/inspiration-1110.avif 1110w,
+                        ./images/portfolio/06-inspiration/inspiration-1350.avif 1350w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/06-inspiration/inspiration-354.webp   354w,
+                        ./images/portfolio/06-inspiration/inspiration-370.webp   370w,
+                        ./images/portfolio/06-inspiration/inspiration-450.webp   450w,
+                        ./images/portfolio/06-inspiration/inspiration-708.webp   708w,
+                        ./images/portfolio/06-inspiration/inspiration-740.webp   740w,
+                        ./images/portfolio/06-inspiration/inspiration-900.webp   900w,
+                        ./images/portfolio/06-inspiration/inspiration-1062.webp 1062w,
+                        ./images/portfolio/06-inspiration/inspiration-1110.webp 1110w,
+                        ./images/portfolio/06-inspiration/inspiration-1350.webp 1350w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      type="image/webp"
+                    />
+                    <img
+                      class="product__img"
+                      loading="lazy"
+                      srcset="
+                        ./images/portfolio/06-inspiration/inspiration-354.jpg   354w,
+                        ./images/portfolio/06-inspiration/inspiration-370.jpg   370w,
+                        ./images/portfolio/06-inspiration/inspiration-450.jpg   450w,
+                        ./images/portfolio/06-inspiration/inspiration-708.jpg   708w,
+                        ./images/portfolio/06-inspiration/inspiration-740.jpg   740w,
+                        ./images/portfolio/06-inspiration/inspiration-900.jpg   900w,
+                        ./images/portfolio/06-inspiration/inspiration-1062.jpg 1062w,
+                        ./images/portfolio/06-inspiration/inspiration-1110.jpg 1110w,
+                        ./images/portfolio/06-inspiration/inspiration-1350.jpg 1350w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      src="./images/portfolio/06-inspiration/inspiration-354.jpg"
+                      alt="Проект веб-сайта Інспірейшин"
+                    />
+                  </picture>
+                  <div class="product__overlay">
+                    <p class="product__text-about">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="product__wrap-text">
+                  <h3 class="product__title title">Inspiration has no Borders</h3>
+                  <p class="product__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item">
+              <a class="product" href="#">
+                <div class="product__wrap-img">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/07-limited/limited-354.avif   354w,
+                        ./images/portfolio/07-limited/limited-370.avif   370w,
+                        ./images/portfolio/07-limited/limited-450.avif   450w,
+                        ./images/portfolio/07-limited/limited-708.avif   708w,
+                        ./images/portfolio/07-limited/limited-740.avif   740w,
+                        ./images/portfolio/07-limited/limited-900.avif   900w,
+                        ./images/portfolio/07-limited/limited-1062.avif 1062w,
+                        ./images/portfolio/07-limited/limited-1110.avif 1110w,
+                        ./images/portfolio/07-limited/limited-1350.avif 1350w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/07-limited/limited-354.webp   354w,
+                        ./images/portfolio/07-limited/limited-370.webp   370w,
+                        ./images/portfolio/07-limited/limited-450.webp   450w,
+                        ./images/portfolio/07-limited/limited-708.webp   708w,
+                        ./images/portfolio/07-limited/limited-740.webp   740w,
+                        ./images/portfolio/07-limited/limited-900.webp   900w,
+                        ./images/portfolio/07-limited/limited-1062.webp 1062w,
+                        ./images/portfolio/07-limited/limited-1110.webp 1110w,
+                        ./images/portfolio/07-limited/limited-1350.webp 1350w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      type="image/webp"
+                    />
+                    <img
+                      class="product__img"
+                      loading="lazy"
+                      srcset="
+                        ./images/portfolio/07-limited/limited-354.jpg   354w,
+                        ./images/portfolio/07-limited/limited-370.jpg   370w,
+                        ./images/portfolio/07-limited/limited-450.jpg   450w,
+                        ./images/portfolio/07-limited/limited-708.jpg   708w,
+                        ./images/portfolio/07-limited/limited-740.jpg   740w,
+                        ./images/portfolio/07-limited/limited-900.jpg   900w,
+                        ./images/portfolio/07-limited/limited-1062.jpg 1062w,
+                        ./images/portfolio/07-limited/limited-1110.jpg 1110w,
+                        ./images/portfolio/07-limited/limited-1350.jpg 1350w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      src="./images/portfolio/07-limited/limited-354.jpg"
+                      alt="Проект дизайна відання Лімітед Едішин"
+                    />
+                  </picture>
+                  <div class="product__overlay">
+                    <p class="product__text-about">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="product__wrap-text">
+                  <h2 class="product__title title">Видання Limited Edition</h2>
+                  <p class="product__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item">
+              <a class="product" href="#">
+                <div class="product__wrap-img">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/09-business/business-354.avif  354w,
+                        ./images/portfolio/08-lab/lab-370.avif            370w,
+                        ./images/portfolio/08-lab/lab-450.avif            450w,
+                        ./images/portfolio/08-lab/lab-708.avif            708w,
+                        ./images/portfolio/08-lab/lab-740.avif            740w,
+                        ./images/portfolio/08-lab/lab-900.avif            900w,
+                        ./images/portfolio/08-lab/lab-1062.avif          1062w,
+                        ./images/portfolio/08-lab/lab-1110.avif          1110w,
+                        ./images/portfolio/08-lab/lab-1350.avif          1350w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/08-lab/lab-354.webp   354w,
+                        ./images/portfolio/08-lab/lab-370.webp   370w,
+                        ./images/portfolio/08-lab/lab-450.webp   450w,
+                        ./images/portfolio/08-lab/lab-708.webp   708w,
+                        ./images/portfolio/08-lab/lab-740.webp   740w,
+                        ./images/portfolio/08-lab/lab-900.webp   900w,
+                        ./images/portfolio/08-lab/lab-1062.webp 1062w,
+                        ./images/portfolio/08-lab/lab-1110.webp 1110w,
+                        ./images/portfolio/08-lab/lab-1350.webp 1350w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      type="image/webp"
+                    />
+                    <img
+                      class="product__img"
+                      loading="lazy"
+                      srcset="
+                        ./images/portfolio/08-lab/lab-354.jpg   354w,
+                        ./images/portfolio/08-lab/lab-370.jpg   370w,
+                        ./images/portfolio/08-lab/lab-450.jpg   450w,
+                        ./images/portfolio/08-lab/lab-708.jpg   708w,
+                        ./images/portfolio/08-lab/lab-740.jpg   740w,
+                        ./images/portfolio/08-lab/lab-900.jpg   900w,
+                        ./images/portfolio/08-lab/lab-1062.jpg 1062w,
+                        ./images/portfolio/08-lab/lab-1110.jpg 1110w,
+                        ./images/portfolio/08-lab/lab-1350.jpg 1350w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      src="./images/portfolio/08-lab/lab-354.jpg"
+                      alt="Проект маркетингу для ЛАБ"
+                    />
+                  </picture>
+                  <div class="product__overlay">
+                    <p class="product__text-about">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="product__wrap-text">
+                  <h2 class="product__title title">Проєкт LAB</h2>
+                  <p class="product__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item">
+              <a class="product" href="#">
+                <div class="product__wrap-img">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/09-business/business-354.avif   354w,
+                        ./images/portfolio/09-business/business-370.avif   370w,
+                        ./images/portfolio/09-business/business-450.avif   450w,
+                        ./images/portfolio/09-business/business-708.avif   708w,
+                        ./images/portfolio/09-business/business-740.avif   740w,
+                        ./images/portfolio/09-business/business-900.avif   900w,
+                        ./images/portfolio/09-business/business-1062.avif 1062w,
+                        ./images/portfolio/09-business/business-1110.avif 1110w,
+                        ./images/portfolio/09-business/business-1350.avif 1350w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/09-business/business-354.webp   354w,
+                        ./images/portfolio/09-business/business-370.webp   370w,
+                        ./images/portfolio/09-business/business-450.webp   450w,
+                        ./images/portfolio/09-business/business-708.webp   708w,
+                        ./images/portfolio/09-business/business-740.webp   740w,
+                        ./images/portfolio/09-business/business-900.webp   900w,
+                        ./images/portfolio/09-business/business-1062.webp 1062w,
+                        ./images/portfolio/09-business/business-1110.webp 1110w,
+                        ./images/portfolio/09-business/business-1350.webp 1350w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      type="image/webp"
+                    />
+                    <img
+                      class="product__img"
+                      loading="lazy"
+                      srcset="
+                        ./images/portfolio/09-business/business-354.jpg   354w,
+                        ./images/portfolio/09-business/business-370.jpg   370w,
+                        ./images/portfolio/09-business/business-450.jpg   450w,
+                        ./images/portfolio/09-business/business-708.jpg   708w,
+                        ./images/portfolio/09-business/business-740.jpg   740w,
+                        ./images/portfolio/09-business/business-900.jpg   900w,
+                        ./images/portfolio/09-business/business-1062.jpg 1062w,
+                        ./images/portfolio/09-business/business-1110.jpg 1110w,
+                        ./images/portfolio/09-business/business-1350.jpg 1350w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      src="./images/portfolio/09-business/business-354.jpg"
+                      alt="Проект додатка Гровін Бізнес"
+                    />
+                  </picture>
+                  <div class="product__overlay">
+                    <p class="product__text-about">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="product__wrap-text">
+                  <h2 class="product__title title">Growing Business</h2>
+                  <p class="product__text">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="_container footer__wrap">
+        <div class="footer__location">
+          <a class="footer__logo logo" href="./index.html" lang="en">
+            Web<span class="footer__logo--color">Studio</span>
+          </a>
+
+          <address class="footer__address address">
+            <ul class="address__list">
+              <li class="address__item">
+                <a
+                  class="address__link"
+                  href="https://goo.gl/maps/4KdnL9pmzvCGPF396"
+                  rel="noreferrer noopener"
+                >
+                  м. Київ, пр-т Лесі Українки, 26
+                </a>
+              </li>
+              <li class="address__item">
+                <a class="address__link-contact" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="address__item">
+                <a class="address__link-contact" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="footer__socials">
+          <h2 class="footer__socials-title title">приєднуйтесь</h2>
+          <ul class="socials">
+            <li class="socials__item">
+              <a
+                href="#"
+                class="link-social footer__socials-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Наш инстаграм"
+              >
+                <svg class="link-social__icon footer__icon-link-social" width="20" height="20">
+                  <use href="./images/icons/icons-webstudio.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team__item-social">
+              <a
+                href="#"
+                class="link-social footer__socials-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Наш твиттер"
+              >
+                <svg class="link-social__icon footer__icon-link-social" width="20" height="20">
+                  <use href="./images/icons/icons-webstudio.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team__item-social">
+              <a
+                href="#"
+                class="link-social footer__socials-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Наш фейсбук"
+              >
+                <svg class="link-social__icon footer__icon-link-social" width="20" height="20">
+                  <use href="./images/icons/icons-webstudio.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team__item-social">
+              <a
+                href="#"
+                class="link-social footer__socials-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Наш линкедин"
+              >
+                <svg class="link-social__icon footer__icon-link-social" width="20" height="20">
+                  <use href="./images/icons/icons-webstudio.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="footer__subscribe subscribe" id="subscribe-form" autocomplete="on">
+          <label class="subscribe__label">
+            <span class="subscribe__label-text">Підпишіться на розсилку</span>
+            <input
+              class="subscribe__input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              required
+            />
+          </label>
+          <button class="subscribe__button btn" type="submit" form="subscribe-form">
+            Підписатися
+            <svg class="subscribe__icon-link" width="24" height="24">
+              <use href="./images/icons/icons-webstudio.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>

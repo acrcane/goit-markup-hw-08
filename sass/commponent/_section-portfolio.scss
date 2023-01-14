@@ -1,0 +1,30 @@
+.portfolio__list-filter {
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.cards__item {
+  flex: 1 1 100%;
+  background-color: var(--second-color);
+
+  @media screen and (min-width: 768px) {
+    flex: 0 1 calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex: 1 1 calc((100% - 90px) / 3);
+  }
+}

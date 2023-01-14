@@ -1,0 +1,39 @@
+.button-menu {
+  position: relative;
+  z-index: 100;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+
+  &:hover .button-menu__open,
+  &:focus .button-menu__open,
+  &:hover .button-menu__close,
+  &:focus .button-menu__close {
+    fill: var(--accent-color);
+  }
+
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}
+
+// .js-open-menu {
+// }
+
+.js-close-menu {
+  display: none;
+}
+
+.js-open-menu[aria-expanded='true'] {
+  display: none;
+}
+
+.js-open-menu[aria-expanded='true'] + .js-close-menu {
+  display: block;
+}

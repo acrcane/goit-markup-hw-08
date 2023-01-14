@@ -1,0 +1,27 @@
+.clients__title {
+  margin-bottom: 50px;
+  @include font(700, 28px, 33px, 0.03em, var(--header-color));
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    @include font(700, 36px, 42px, 0.03em, var(--header-color));
+  }
+}
+
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.clients__item {
+  flex: 1 1 calc((100% - 30px) / 2);
+
+  @media screen and (min-width: 768px) {
+    flex: 1 1 calc((100% - 60px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex: 1 1 calc((100% - 150px) / 6);
+  }
+}

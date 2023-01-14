@@ -1,0 +1,22 @@
+.member__img {
+  margin: 0 auto;
+}
+
+.member__description {
+  padding-top: 30px;
+  padding-bottom: 24px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
+}
+
+.member__name-title {
+  margin-bottom: 10px;
+  @include font(500, 16px, 19px, 0.03em, var(--header-color));
+}
+
+.member__text {
+  margin-bottom: 16px;
+  @include font(400, 16px, 19px, 0.03em, var(--text-color));
+}

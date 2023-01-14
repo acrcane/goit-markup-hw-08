@@ -1,0 +1,44 @@
+@import './base/modern-normalize';
+@import './base/variables';
+@import './utils/mixins';
+@import './base/reset';
+@import './base/base';
+
+// header
+@import './layout/header';
+
+// sections
+@import './commponent/section-banner';
+@import './commponent/section-achievements';
+@import './commponent/section-work';
+@import './commponent/section-team';
+@import './commponent/section-clients';
+@import './commponent/section-portfolio';
+
+// components
+@import './commponent/logo';
+@import './commponent/menu';
+@import './commponent/social-links';
+@import './commponent/button-menu';
+@import './commponent/contacts';
+@import './commponent/benefit';
+@import './commponent/application';
+@import './commponent/member';
+@import './commponent/socials';
+@import './commponent/company';
+@import './commponent/filters';
+@import './commponent/product';
+@import './commponent/address';
+
+// forms
+@import './commponent/form-callback';
+@import './commponent/form-subscribe';
+
+// modals
+@import './commponent/modal';
+
+// footer
+@import './layout/footer';
+
+// visually-hidden
+@import './commponent/visually-hidden';

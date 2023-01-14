@@ -1,0 +1,33 @@
+.address {
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+}
+
+// .address__list:not(:last-child) {
+//   margin-bottom: 9px;
+// }
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__link {
+  color: var(--second-color);
+  transition: color 250ms var(--base-transition);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.address__link-contact {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms var(--base-transition);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
