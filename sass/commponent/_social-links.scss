@@ -13,7 +13,15 @@
 
 .social-links__item {
   @media screen and (max-width: 479px) {
-    flex: 1 1 50%;
+    // flex: 1 1 50%;
+    &:not(:last-child) {
+      padding-right: 10px;
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+
+    &:not(:first-child) {
+      padding-left: 10px;
+    }
   }
 
   @media screen and (min-width: 480px) {
